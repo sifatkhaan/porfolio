@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -11,16 +12,34 @@ export default function HomePage() {
             <div>
                 <ul className='flex items-center gap-9'>
                     <li>
-                       <a clasname="hover:text-gray-500"  href="#">Home</a> 
+                        <Link clasname="hover:text-gray-500" href="/">
+                        Home
+                        </Link>
+                        
                     </li>
                     <li>
-                       <a clasname="hover:text-gray-500"  href="#">Portfolio</a> 
+                    <Link clasname="hover:text-gray-500" href="/portfolio">
+                        Portfolio
+                        </Link>
+                      
                     </li>
                     <li>
-                       <a clasname="hover:text-gray-500"  href="#">About</a> 
+                    <Link clasname="hover:text-gray-500" href="/about">
+                        About
+                        </Link>
+                       
                     </li>
                     <li>
-                       <a  clasname="hover:text-gray-500" href="#">Contact</a> 
+                    <Link clasname="hover:text-gray-500" href="/blog">
+                    Blog
+                        </Link>
+                       
+                    </li>
+                    <li>
+                    <Link clasname="hover:text-gray-500" href="/contact">
+                        Contact
+                        </Link>
+                        
                     </li>
                 </ul>
             </div>
@@ -29,6 +48,7 @@ export default function HomePage() {
             </div>
         </nav>
      </header>
+     <p>this is my home pages</p>
     </div>
   )
 }

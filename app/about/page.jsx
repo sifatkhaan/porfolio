@@ -1,17 +1,18 @@
-import Image from "next/image";
+import React from 'react'
 import Link from 'next/link';
-export default function Home() {
+export default function AboutPage() {
   return (
-    <main>
-      <div className="flex min-h-screen flex-col container bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]">
+    
+   
+     <div className="flex min-h-screen flex-col container bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]">
      <header className='bg-white'>
         <nav className='flex justify-between items-center mx-auto'>
             <div>
                 <img/>
             </div>
             <div>
-            <ul className='flex items-center gap-9'>
-            <li>
+                <ul className='flex items-center gap-9'>
+                    <li>
                         <Link clasname="hover:text-gray-500" href="/">
                         Home
                         </Link>
@@ -47,10 +48,11 @@ export default function Home() {
                 <button className='bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]'>Sign In</button>
             </div>
         </nav>
-     </header>
-     <p>This is my Home place</p>
+     </header> 
+     <div>
+      <p>This is my about page</p>
     </div>
-    
-    </main>
-  );
+
+    </div>
+  )
 }
