@@ -3,13 +3,13 @@ import Link from 'next/link';
 export default function Blog() {
   return (
     <div className="flex min-h-screen flex-col container bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]">
-    <header className='bg-white'>
+    <header className='bg-gradient-to-r from-cyan-500 to-blue-500'>
        <nav className='flex justify-between items-center mx-auto'>
            <div>
                <img/>
            </div>
            <div>
-               <ul className='flex items-center gap-9'>
+               <ul className='flex items-center gap-9 font-right'>
                    <li>
                        <Link clasname="hover:text-gray-500" href="/">
                        Home

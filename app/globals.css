@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Quintessential&family=Righteous&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
