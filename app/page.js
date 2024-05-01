@@ -1,98 +1,30 @@
 import { getURL } from "next/dist/shared/lib/utils";
 import Image from "next/image";
 import Link from 'next/link';
+import Header from "./component/Header";
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col container"
-//        style={{
-//         backgroundImage: `url(/image/sunset.jpg)`
-//    }}
->
-     <header className='bg-gradient-to-r from-cyan-500 to-blue-500'>
-        <nav className='flex justify-between items-center mx-auto'>
-            <div>
-                <img/>
-            </div>
-            <div>
-            <ul className='flex items-center gap-9 font-berkshire'>
-            <li>
-                        <Link clasname="hover:text-gray-500" href="/">
-                        Home
-                        </Link>
-                        
-                    </li>
-                    <li>
-                    <Link clasname="hover:text-gray-500" href="/portfolio">
-                        Portfolio
-                        </Link>
-                      
-                    </li>
-                    <li>
-                    <Link clasname="hover:text-gray-500" href="/about">
-                        About
-                        </Link>
-                       
-                    </li>
-                    <li>
-                    <Link clasname="hover:text-gray-500" href="/blog">
-                    Blog
-                        </Link>
-                       
-                    </li>
-                    <li>
-                    <Link clasname="hover:text-gray-500" href="/contact">
-                        Contact
-                        </Link>
-                        
-                    </li>
-                </ul>
-            </div>
-            <div className='pr-3 py-2'>
-                <button className='bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]'>Sign In</button>
-            </div>
-        </nav>
-     </header>
+      <div className="flex flex-col container">
+   <Header/>
      <div
-     className="bg-[url('/image/sunset.jpg')] w-full h-[300px] bg-cover"
+     className=" bg-[url('/image/sunset.jpg')] w-full h-[300px] bg-cover bg-center"
      >
-      hello home page
-    <p>lorem
-        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
-        jflkjflksjdf
-        sjflsjf
-    </p>
-    <p>lorem
-        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
-        jflkjflksjdf
-        sjflsjf
-    </p>
-    <p>lorem
-        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
-        jflkjflksjdf
-        sjflsjf
-    </p>
-    <p>lorem
-        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
-        jflkjflksjdf
-        sjflsjf
-    </p>
-    <p>lorem
-        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
-        jflkjflksjdf
-        sjflsjf
-    </p>
-    <p>lorem
-        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
-        jflkjflksjdf
-        sjflsjf
-    </p>
-    <p>lorem
-        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
-        jflkjflksjdf
-        sjflsjf
-    </p>
+    <p className="font-berkshire text-5xl md:text-6xl text-white text-center p-3">Wellcome to My Portfolio</p>
+    <div className="grid grid-cols-2 gap-2 w-full h-[80px] m-3 justify-items-center font-berkshire">
+    <div className="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] p-1 text-center content-center w-3/4 md:w-1/4 rounded-lg shadow-lg">Are you a connoisseur? Do you like a connoissuer? Wow!! This is for you.. <p>Lets move on..</p>
+    </div>
+    <div className="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] p-1 text-center content-center w-3/4 md:w-1/4 rounded-lg shadow-lg">Hi!! This is Trisha Khalil. You can enjoy it or you can hire my excellency. Here you go...</div>
+    </div>
+
      </div>
+     <section>
+     <h1 className="text-center text-6xl font-right p-2">About</h1>
+        <div>
+
+        </div>
+        
+     </section>
     </div>
     
     </main>
