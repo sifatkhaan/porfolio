@@ -1,9 +1,14 @@
+import { getURL } from "next/dist/shared/lib/utils";
 import Image from "next/image";
 import Link from 'next/link';
 export default function Home() {
   return (
     <main>
-      <div className="flex min-h-screen flex-col container bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]">
+      <div className="flex flex-col container"
+//        style={{
+//         backgroundImage: `url(/image/sunset.jpg)`
+//    }}
+>
      <header className='bg-gradient-to-r from-cyan-500 to-blue-500'>
         <nav className='flex justify-between items-center mx-auto'>
             <div>
@@ -48,7 +53,46 @@ export default function Home() {
             </div>
         </nav>
      </header>
-     <p>This is my Home place</p>
+     <div
+     className="bg-[url('/image/sunset.jpg')] w-full h-[300px] bg-cover"
+     >
+      hello home page
+    <p>lorem
+        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
+        jflkjflksjdf
+        sjflsjf
+    </p>
+    <p>lorem
+        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
+        jflkjflksjdf
+        sjflsjf
+    </p>
+    <p>lorem
+        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
+        jflkjflksjdf
+        sjflsjf
+    </p>
+    <p>lorem
+        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
+        jflkjflksjdf
+        sjflsjf
+    </p>
+    <p>lorem
+        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
+        jflkjflksjdf
+        sjflsjf
+    </p>
+    <p>lorem
+        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
+        jflkjflksjdf
+        sjflsjf
+    </p>
+    <p>lorem
+        jfjlfjlsajdf jdflkjsfl ksdjlksjf 
+        jflkjflksjdf
+        sjflsjf
+    </p>
+     </div>
     </div>
     
     </main>

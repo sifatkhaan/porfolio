@@ -47,7 +47,7 @@ export default function Blog() {
            </div>
        </nav>
     </header> 
-    <div>
+    <div className="w-full h-[300px] bg-cover bg-center" style={{backgroundImage: 'url(/image/sunset.jpg)'}}>
      <p>This is my blog page</p>
    </div>
 
