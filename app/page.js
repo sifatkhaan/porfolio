@@ -26,7 +26,7 @@ export default function Home() {
             <p className="p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <div className="flex items-center justify-center p-3 w-1/2">
-            <Image src="/image/myphoto.jpg" alt="Example" width={400} height={200} />
+            {/* <Image src="/image/myphoto.jpg" alt="Example" width={400} height={200} /> */}
         </div>
         </div>
 
@@ -38,7 +38,7 @@ export default function Home() {
             <p className="p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <div className="flex items-center justify-center p-3 w-1/2">
-            <Image src="/image/myphoto.jpg" alt="Example" width={400} height={200} />
+            {/* <Image src="/image/myphoto.jpg" alt="Example" width={400} height={200} /> */}
         </div>
         </div>
 
@@ -49,9 +49,9 @@ export default function Home() {
         <div className="flex items-center justify-center w-1/2">
             <p className="p-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <div className="flex items-center justify-center p-3 w-1/2">
+        {/* <div className="flex items-center justify-center p-3 w-1/2">
             <Image src="/image/myphoto.jpg" alt="Example" width={400} height={200} />
-        </div>
+        </div> */}
         </div>
 
      </section>
@@ -85,13 +85,13 @@ export default function Home() {
                <Input className="w-2/3 h-[40px]" type="text" placeholder="Enter email..."/>
                <Button className="text-white bg-blue-500 border-none mx-1 h-[40px]">Go</Button>
             </div>
-            <div>
+            {/* <div>
                 <span>
                     <Link href="#">
                         <Image src="/logo/fblogo.png" width={40} height={40}/>
                     </Link>
                 </span>
-            </div>
+            </div> */}
         </div>
      </footer>
     </div>
