@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             <div>
                 <span>
-                    <Link href="https://www.facebook.com/trisha.khalil?mibextid=ZbWKwL">
+                    <Link href="#">
                         <Image src="/logo/fblogo.png" width={40} height={40}/>
                     </Link>
                 </span>
