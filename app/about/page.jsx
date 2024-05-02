@@ -6,7 +6,7 @@ export default function AboutPage() {
     
    
      <div className="flex min-h-screen flex-col container bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]">
-<Header/>
+        <Header/>
      <div>
       <p>This is my about page</p>
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 export default function Header() {
   return (
-    <div>
+    <>
         <header className='bg-gradient-to-r from-cyan-500 to-blue-500'>
         <nav className='flex justify-between items-center mx-auto'>
             <div>
@@ -47,6 +47,6 @@ export default function Header() {
             </div>
         </nav>
      </header>
-    </div>
+    </>
   )
 }
