@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import Header from '../component/Header';
 import Footer from '../component/Footer';
+import { Test } from '../component/test/Test';
 export default function Blog() {
   return (
        <div className="flex min-h-screen w-full flex-col bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]">
@@ -21,7 +22,7 @@ export default function Blog() {
             <Image src="/image/myphoto.jpg" alt="Example" width={400} height={200} />
         </div>
         </div>
-
+      {/* <Test/> */}
      </section>
         </div>
     <Footer/>

@@ -1,9 +1,10 @@
+"use client"
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import {Button, Input} from 'antd';
 import Image from "next/image";
 
-export default function Footer() {
+export default function Footer({setSearchTerm}) {
   return (
 
        <footer className='mt-auto'>
@@ -33,13 +34,13 @@ export default function Footer() {
                 </div>
             </div>
             <div className="flex justify-center">
-               <Input className="w-2/3 h-[40px]" type="text" placeholder="Enter email..."/>
+               <Input className="w-2/3 h-[40px]" onChange={(e)=> setSearchTerm(e.target.value)} type="text" placeholder="Enter email..."/>
                <Button className="text-white bg-blue-500 border-none mx-1 h-[40px]">Go</Button>
             </div>
             <div>
                 <span>
                     <Link href="#">
-                        <Image src="/logo/fblogo.png" width={40} height={40}/>
+                        <Image src="/logo/fblogo.png" alt='example' width={40} height={40}/>
                     </Link>
                 </span>
             </div>
