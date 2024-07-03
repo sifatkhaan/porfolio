@@ -1,0 +1,110 @@
+
+[
+    {
+      "id": 1,
+      "photo": "/../../../../../../book1.jpg",
+      "name": "Aroz Ali Somipe",
+      "author": "Arif Ajad",
+      "price": 200
+    },
+    {
+      "id": 2,
+      "photo": "/../../../../../../book2.jpg",
+      "name": "প্যারাডক্সিকেল সাজিদ",
+      "author": "Arif Ajad",
+      "price": 250
+    },
+    {
+      "id": 3,
+      "photo": "/../../../../../../book3.jpg",
+      "name": "নবী জীবনের গল্প",
+      "author": "Arif Ajad",
+      "price": 270
+    },
+    {
+      "id": 4,
+      "photo": "/../../../../../../road_to_freedom.jpg",
+      "name": "Road To Freedom",
+      "author": "Jean-Paul Sartre",
+      "price": 650
+    },
+    {
+      "id": 5,
+      "photo": "/../../../../../../legacy_of_blood.jpg",
+      "name": "Legacy of Blood",
+      "author": "Anthony Mascharenhus",
+      "price": 350
+    },
+    {
+      "id": 6,
+      "photo": "/../../../../../../deyal.jpeg",
+      "name": "দেয়াল",
+      "author": "Humayun Ahmed",
+      "price": 500
+    },
+    {
+      "id": 7,
+      "photo": "/../../../../../../Badshah-Namdar.jpg",
+      "name": "বাদশাহ নামদার",
+      "author": "Humayun Ahmed",
+      "price": 550
+    },
+    {
+      "id": 8,
+      "photo": "/../../../../../../misir_ali.jpg",
+      "name": "মিসির আলি",
+      "author": "Humayun Ahmed",
+      "price": 550
+    },
+    {
+      "id": 9,
+      "photo": "/../../../../../../Himu-Somogro.jpg",
+      "name": "হিমু সমগ্র",
+      "author": "Humayun Ahmed",
+      "price": 1050
+    },
+    {
+      "id": 10,
+      "photo": "/../../../../../../lilaboti.jpeg",
+      "name": "লীলাবতি",
+      "author": "Humayun Ahmed",
+      "price": 200
+    },
+    {
+      "id": 11,
+      "photo": "/../../../../../../holud_himu.jpg",
+      "name": "হলুদ হিমু নীল রূপা",
+      "author": "Humayun Ahmed",
+      "price": 120
+    },
+    {
+      "id": 12,
+      "photo": "/../../../../../../hundred_years_of_solitude.jpg",
+      "name": "Hundred Years of Solitude",
+      "author": "Gabriel Garcia Markez",
+      "price": 750
+    },
+    {
+      "id": 13,
+      "photo": "/../../../../../../noukadubi.jpg",
+      "name": "নৌকাডুবি",
+      "author": "Rabindranath Tagore",
+      "price": 230
+    },
+    {
+      "id": 14,
+      "photo": "/../../../../../../sheser_kobita.png",
+      "name": "শেষের কবিতা",
+      "author": "Rabindranath Tagore",
+      "price": 180
+    },
+    {
+      "id": 15,
+      "photo": "/../../../../../../bolaka.webp",
+      "name": "বলাকা",
+      "author": "Rabindranath Tagore",
+      "price": 150
+    }
+    
+  ]
+  

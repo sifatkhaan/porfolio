@@ -6,10 +6,16 @@ import Test  from '../component/test/Test';
 import List  from '../component/test/List';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
+import booksData from '../booksData.json';
 import InputWithLabel from '../component/Form/InputWithLabel';
-export default function Contact() {
 
+export default function Contact() {
   // states
+//book state
+const [bookSearch, setSearchBook]= useState("")
+const [bookItem, setBookItem]= useState(booksData)
+//book state end
+
   const [searchTearm, setSearchTerm]= useState('React');
   const item= 
     {
@@ -84,7 +90,6 @@ export default function Contact() {
   ];
 
   const [stories, setStories] = useState(businessOperation)
-
   const handleRemoveStories = (item) =>{
     const newStories = stories.filter((story)=> item.id !== story.id);
     setStories(newStories)
@@ -98,6 +103,21 @@ export default function Contact() {
    tree.fall = "We make giant leaf pumpkins";
    const display = tree.fall.indexOf("giant")
    console.log("contact page")
+
+   //books search
+   console.log(booksData, "books");
+
+  //  const resetFilters = (e)=>{
+  //   const query = e.target.value.toLowerCase();
+  //   setSearchBook(query);
+  //   const searchResult = booksData.filter((item) =>
+  //   item.name.toLowerCase().includes(query)
+  //   )
+  //   setBookItem(searchResult);
+  //  }
+  const resetFilters = booksData.filter(data=>
+    data.name.toLowerCase().includes(bookSearch.toLowerCase())
+  )
 
 
   return (
@@ -126,6 +146,26 @@ export default function Contact() {
                   </Col>
                   ))}
             </Row>
+        </div>
+        {/* test search */}
+        <div className='flex m-4 w-full'>
+          <Row>
+            <Col span={24}>
+            
+            <input className='p-1 rounded-md pl-2' placeholder='search books...' type="text" onChange={(e)=>setSearchBook(e.target.value)}/>
+          
+          </Col>
+          {resetFilters.map((data, i)=> (
+            <Col className='m-3 p-2 rounded-md bg-slate-300' key={i}>
+              <p>{data.name}</p>
+              <p>{data.price}</p>
+              </Col>
+          )) 
+          }
+            
+          </Row>
+     
+          
         </div>
 
       </div>
