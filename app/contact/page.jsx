@@ -14,6 +14,7 @@ export default function Contact() {
 //book state
 const [bookSearch, setSearchBook]= useState("")
 const [bookItem, setBookItem]= useState(booksData)
+const [filteredType, setFilteredType] = useState("");
 //book state end
 
   const [searchTearm, setSearchTerm]= useState('React');
@@ -115,9 +116,14 @@ const [bookItem, setBookItem]= useState(booksData)
   //   )
   //   setBookItem(searchResult);
   //  }
-  const resetFilters = booksData.filter(data=>
-    data.name.toLowerCase().includes(bookSearch.toLowerCase())
-  )
+ const handleTypeFilter = (type)=>{
+  setFilteredType(type);
+ }
+  const resetFilters = booksData.filter(data=> {
+    const matchType = filteredType ? data.type === filteredType : true;
+    const matchSearch = bookSearch ? data.name.toLowerCase().includes(bookSearch.toLowerCase()) : true;
+    return matchType && matchSearch;
+  })
 
 
   return (
@@ -148,13 +154,19 @@ const [bookItem, setBookItem]= useState(booksData)
             </Row>
         </div>
         {/* test search */}
-        <div className='flex m-4 w-full'>
+        <div className='m-4 w-full'>
           <Row>
-            <Col span={24}>
-            
+            <Col span={6}>
             <input className='p-1 rounded-md pl-2' placeholder='search books...' type="text" onChange={(e)=>setSearchBook(e.target.value)}/>
-          
           </Col>
+            <Col span={6}>
+            <button onClick={() => handleTypeFilter("story")}>Story</button>
+          </Col>
+            <Col span={6}>
+            <button onClick={() => handleTypeFilter("essay")}>Essay</button>
+          </Col>
+          </Row>
+          <Row>
           {resetFilters.map((data, i)=> (
             <Col className='m-3 p-2 rounded-md bg-slate-300' key={i}>
               <p>{data.name}</p>
@@ -162,7 +174,6 @@ const [bookItem, setBookItem]= useState(booksData)
               </Col>
           )) 
           }
-            
           </Row>
      
           
