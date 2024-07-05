@@ -160,10 +160,10 @@ const [filteredType, setFilteredType] = useState("");
             <input className='p-1 rounded-md pl-2' placeholder='search books...' type="text" onChange={(e)=>setSearchBook(e.target.value)}/>
           </Col>
             <Col span={6}>
-            <button onClick={() => handleTypeFilter("story")}>Story</button>
+            <button className='bg-red-300 px-2 py-1 shadow-md hover:bg-red-400 transition hover:scale-110 ease-out hover:ease-in hover:ring-1 rounded-md duration-300' onClick={() => handleTypeFilter("story")}>Story</button>
           </Col>
             <Col span={6}>
-            <button onClick={() => handleTypeFilter("essay")}>Essay</button>
+            <button className='bg-orange-300 px-2 py-1 shadow-md hover:bg-orange-400 transition hover:scale-110 ease-out hover:ease-in hover:ring-1 rounded-md duration-300' onClick={() => handleTypeFilter("essay")}>Essay</button>
           </Col>
           </Row>
           <Row>
