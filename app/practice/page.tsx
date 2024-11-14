@@ -1,13 +1,8 @@
 'use client';
 import React, { useEffect, useReducer, useRef, useState } from 'react';
 import Todo from '../component/test/Todo';
+import { ACTIONS } from '../component/actions';
 
-// Define the action types as constants
-export const ACTIONS = {
-    ADD_TODO: 'add-todo',
-    TOGGLE_TODO: 'toggle-todo',
-    DELETE_TODO: 'delete-todo',
-};
 
 // Define the type for the Todo item
 interface TodoType {

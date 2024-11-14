@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ACTIONS } from '../../practice/page';
+import { ACTIONS } from '../actions';
 
 interface TodoType {
   id: number;
