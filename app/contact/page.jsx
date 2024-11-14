@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import Link from 'next/link';
-import {Col, Row, Input, Checkbox } from "antd";
+import {Col, Row, Checkbox } from "antd";
 import Test  from '../component/test/Test';
 import List  from '../component/test/List';
 import Header from '../component/Header';
@@ -103,7 +102,19 @@ const [filteredType, setFilteredType] = useState("");
    tree.shade = "it keeps us cool in the summer";
    tree.fall = "We make giant leaf pumpkins";
    const display = tree.fall.indexOf("giant")
-   console.log("contact page")
+  function add(s){
+    let a = parseInt(s, 10)
+    console.log(a, 'a')
+    let b = s.indexOf('+');
+    console.log(b, 'b');
+    let c = s.substr(b+1)
+    console.log(c, 'c')
+    let d = parseInt(c)
+    return a+ d
+  }
+
+  add('102+17')
+   console.log(display, "display page")
 
    //books search
    console.log(booksData, "books");
@@ -175,10 +186,7 @@ const [filteredType, setFilteredType] = useState("");
           )) 
           }
           </Row>
-     
-          
         </div>
-
       </div>
       <div className='flex'>
       <div className='justify-center w-1/5 m-2'> {searchTearm}

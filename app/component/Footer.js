@@ -39,7 +39,7 @@ export default function Footer({setSearchTerm}) {
             </div>
             <div>
                 <span>
-                    <Link href="#">
+                    <Link href="https://www.facebook.com/sifat.hossain.927">
                         <Image src="/logo/fblogo.png" alt='example' width={40} height={40}/>
                     </Link>
                 </span>
