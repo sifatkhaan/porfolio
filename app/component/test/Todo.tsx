@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { ACTIONS } from '../actions';
 
 interface TodoType {
@@ -14,11 +14,15 @@ interface TodoProps {
 }
 
 export default function Todo({ todo, dispatch }: TodoProps) {
+
   return (
+    <>
     <div>
       <span style={{ color: todo.complete ? '#AAA' : '#000' }}>{todo.name}</span>
-      <button className="px-10 bg-gray-400" onClick={() => dispatch({ type: ACTIONS.TOGGLE_TODO, payload: { id: todo.id } })}>Toggle</button>
-      <button className='bg-gray-400' onClick={() => dispatch({ type: ACTIONS.DELETE_TODO, payload: { id: todo.id } })}>Delete</button>
+      <button className="px-5 bg-gray-400 " onClick={() => dispatch({ type: ACTIONS.TOGGLE_TODO, payload: { id: todo.id } })}>Toggle</button>
+      <button className='bg-gray-400 mx-4 px-5' onClick={() => dispatch({ type: ACTIONS.DELETE_TODO, payload: { id: todo.id } })}>Delete</button>
     </div>
+
+    </>
   );
 }

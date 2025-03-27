@@ -2,6 +2,9 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react';
 import Todo from '../component/test/Todo';
 import { ACTIONS } from '../component/actions';
+import ChildGrid from '../component/test/ChildGrid';
+import { produce } from 'immer';
+
 
 
 // Define the type for the Todo item
@@ -74,10 +77,28 @@ export default function Practice() {
         countValue.current++;
     }
 
+    const [bugs, setBugs]= useState([
+        {id:1, name:'First Bugs', fixed:false},
+        {id:2, name:'Second Bugs', fixed:false},
+    ])
+    const [works, setWorks]= useState([
+        {id:1, name:'First Work', status:false},
+        {id:2, name:'Second Work', status:false},
+    ])
+
+    const handleClickBug = () => {
+        setBugs(produce(draft => {
+            const bug = draft.find(bug=> bug.id === 1)
+            if(bug) bug.fixed = true;
+        }))
+    }
+
+
     return (
         <div className='h-screen bg-gray-200 p-10'>
-            <div>
-                <h1>Use Ref Hook</h1>
+            <div className='flex justify-between w-2/3'>
+              <div>
+              <h1>Use Ref Hook</h1>
                 <button onClick={handleClick}>Click It</button>
                 <div className='' ref={divRefElement}>
                     <h2>Some Random Text</h2>
@@ -88,6 +109,12 @@ export default function Practice() {
                         ref={inputRef}
                         className='p-2 outline-pink-500 border-purple-400'
                     />
+                </div>
+              </div>
+              <div>
+                {bugs.map(bug=> <p key={bug.id}> {bug.name} {bug.fixed ? 'fixed': 'New' }</p> 
+                )}
+                    <button onClick={handleClickBug} className='bg-green-300'>Click me</button>
                 </div>
             </div>
             <div className='text-xl py-10'>
@@ -107,6 +134,8 @@ export default function Practice() {
                     <Todo key={todo.id} todo={todo} dispatch={dispatch} />
                 ))}
             </div>
+
+            <ChildGrid/>
         </div>
     );
 }
