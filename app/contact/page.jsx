@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import {Col, Row, Checkbox } from "antd";
 import Test  from '../component/test/Test';
 import List  from '../component/test/List';
-import Header from '../component/Header';
-import Footer from '../component/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import booksData from '../booksData.json';
-import InputWithLabel from '../component/Form/InputWithLabel';
+import InputWithLabel from '../../components/Form/InputWithLabel';
 
 export default function Contact() {
   // states

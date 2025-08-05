@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     "lib/Providers.tsx"
-  ],
+, "app/calculator/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
