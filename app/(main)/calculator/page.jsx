@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import TemperatureInput from "../../components/calculator/TemperatureInput";
-import { convertor, toCelsius, toFahrenheit } from "../../lib/Convertor";
-import BoilingVerdict from "../../components/calculator/BoilingVerdict";
+import TemperatureInput from "../../../components/calculator/TemperatureInput";
+import { convertor, toCelsius, toFahrenheit } from "../../../lib/Convertor";
+import BoilingVerdict from "../../../components/calculator/BoilingVerdict";
 
 export default function Calculator() {
   const [temparature, setTemparature] = useState("");

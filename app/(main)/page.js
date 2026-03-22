@@ -1,14 +1,13 @@
 import { getURL } from "next/dist/shared/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 import { Button, Input } from "antd";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 export default function Home() {
   return (
     <main>
       <div className="flex flex-col">
-        <Header />
         <div className="bg-[url('/image/sunset.jpg')] w-full h-[300px] bg-cover bg-center">
           <p className="font-berkshire text-5xl md:text-6xl text-white text-center p-3">
             Wellcome to My Portfolio
@@ -105,7 +104,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     </main>
   );
